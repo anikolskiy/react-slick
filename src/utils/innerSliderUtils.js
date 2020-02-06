@@ -742,6 +742,10 @@ export const getTrackLeft = spec => {
     }
   }
 
+  while (targetLeft > 0) {
+    targetLeft -= slideWidth * slidesToShow;
+  }
+
   return targetLeft;
 };
 
